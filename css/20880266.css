@@ -247,3 +247,30 @@ footer nav a:hover,
 footer nav .active a {
     color: #FA97C2;
 }
+
+/*--about page--*/
+#small-banner {
+    background: url(../images/bg_slider.gif) center top repeat;
+    padding: 0.25em;
+    content: "";
+}
+
+.round-img {
+    border-radius: 15px;
+    float: left;
+    margin-right: 15px;
+}
+
+#testimonials .col {
+    background: url(../images/quot.png) top left no-repeat;
+    padding-left: 50px;
+
+}
+
+#testimonials h3 {
+    margin-left: -14px;
+}
+
+.img-rounded {
+    border-radius: 1em;
+}
