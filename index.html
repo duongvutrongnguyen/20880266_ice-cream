@@ -28,19 +28,19 @@
       <div class="collapse navbar-collapse justify-content-end" id="menu">
         <ul class="navbar-nav mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="menu.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+            <a class="nav-link" href="contacts.html">Contacts</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" id="frm-search">
@@ -63,7 +63,7 @@
   <!--banner-->
   <div class="container-fluid" id="banner">
     <div class="conteiner text-center">
-      <h4>Tasty cakes and ice-cream<br />for everyone</h4>
+      <h4 class="text-white">Tasty cakes and ice-cream<br />for everyone</h4>
       <div>
         <a id="btn-menu" href="#">see our menu</a>
       </div>
@@ -78,41 +78,41 @@
 
   <!--main-->
   <div class="container">
-    <div class="row">
+    <div class="row my-5">
       <div class="col-md-3 col-sm-6 text-center">
         <img src="images/icon-1.png" alt="">
         <h4>Coffee</h4>
-        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
-        <a href="#">Read more</a>
+        <div class="pb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        <a class="readmore" href="#">Read more</a>
       </div>
       <div class="col-md-3 col-sm-6 text-center">
         <img src="images/icon-2.png" alt="">
         <h4>Drinks</h4>
-        <div>Consequatur nihil soluta accusantium neque, minus quos harum!</div>
-        <a href="#">Read more</a>
+        <div class="pb-2">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+        <a class="readmore" href="#">Read more</a>
       </div>
       <div class="col-md-3 col-sm-6 text-center">
         <img src="images/icon-3.png" alt="">
         <h4>Cakes</h4>
-        <div>Cumque vitae, tempora accusamus quibusdam sunt libero. Veritatis.</div>
-        <a href="#">Read more</a>
+        <div class="pb-2">Cumque vitae, tempora accusamus quibusdam sunt libero. Veritatis.</div>
+        <a class="readmore" href="#">Read more</a>
       </div>
       <div class="col-md-3 col-sm-6 text-center">
         <img src="images/icon-4.png" alt="">
         <h4>Ice-cream</h4>
-        <div>Molestiae, recusandae odit velit inventore dignissimos tenetur quo.</div>
-        <a href="#">Read more</a>
+        <div class="pb-2">Molestiae, recusandae odit velit inventore dignissimos tenetur quo.</div>
+        <a class="readmore" href="#">Read more</a>
       </div>
     </div>
   </div>
   <!--/main-->
 
   <!--about us-->
-  <div class="container-fluid">
+  <div class="container-fluid about py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-          <h3>About Us</h3>
+          <h3 class="text-white">About Us</h3>
           <div>
             <img src="images/icon-about.png" alt="">
             <div>
@@ -120,7 +120,7 @@
               minus maxime excepturi voluptates eius corrupti culpa laboriosam rerum, commodi praesentium porro quas aut
               veritatis inventore.
             </div>
-            <div>
+            <div class="pt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis architecto animi
               reprehenderit pariatur ullam ut qui nesciunt et hic?
               <a href="#">Read more</a>
@@ -128,7 +128,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <form action="post">
+          <form action="post" id="frm-signup">
             <h3>Newsletter<br />Sign up</h3>
             <div>Please, write an e-mail:</div>
             <div><input type="text" name="e-mail" id="email"></div>
@@ -141,37 +141,43 @@
     <!--/about us-->
 
     <!--News-->
-    <div>
+    <div class="container py-5">
       <h3>News</h3>
       <div class="row">
         <div class="col">
-          <div>
-            <div>25.<br />December.</div>
-            <a href="#">Read more</a>
-          </div>
-          <div>
-            <h4>Accumsan</h4>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-          </div>
-        </div>
-        <div class="col">
-          <div>
-            <div>25.<br />December.</div>
-            <a href="#">Read more</a>
-          </div>
-          <div>
-            <h4>Accumsan</h4>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div class="row">
+            <div class="col sm-4">
+              <div class="date">25.<br />Dec.</div>
+              <a href="#" class="readmore">Read more</a>
+            </div> 
+            <div class="col-sm-8">
+              <h4>Accumsan</h4>
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
           </div>
         </div>
         <div class="col">
-          <div>
-            <div>25.<br />December.</div>
-            <a href="#">Read more</a>
+          <div class="row">
+            <div class="col sm-4">
+              <div class="date">25.<br />Dec.</div>
+              <a href="#" class="readmore">Read more</a>
+            </div> 
+            <div class="col-sm-8">
+              <h4>Accumsan</h4>
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
           </div>
-          <div>
-            <h4>Accumsan</h4>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col sm-4">
+              <div class="date">25.<br />Dec.</div>
+              <a href="#" class="readmore">Read more</a>
+            </div> 
+            <div class="col-sm-8">
+              <h4>Accumsan</h4>
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -179,18 +185,18 @@
     <!--/News-->
 
     <!--footer-->
-    <footer>
+    <footer class="container-fluid">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
       <div>
-        Ice-cream &copy; 2019 | <a href="#">Privacty Policy</a>
+        Ice-cream &copy; 2019 | <a href="#" class="text-uppercase">Privacty Policy</a>
       </div>
     </footer>
     <!--/footer-->

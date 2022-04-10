@@ -136,6 +136,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    #menu li {
+        margin-left: 20px;
+        padding: 0;
+    }
     #logo {
         position: relative;
     }
@@ -163,4 +167,112 @@ body {
         left: 10px;
         bottom: -73px;
     }
+}
+
+/*--main--*/
+h4 {
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+    color: #333333;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+a.readmore {
+    text-decoration: underline;
+    color: #2fa0d5;
+
+}
+
+/*--about--*/
+.about {
+    background: #FA97C2;
+    color: #814e64;
+}
+
+h3 {
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.about div > img {
+    float: left;
+    margin: 20px;
+}
+
+#frm-signup {
+    border: 3px dashed #814e64;
+    padding: 20px 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#frm-signup h3 {
+    font-size: 30px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#frm-signup input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    padding: 10px;
+    box-shadow: 0 0 0;
+    margin: 6px 0;
+}
+
+#frm-signup button {
+    float: right;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    background: #333333;
+    font: 22px 'Changa One', cursive;
+    text-transform: uppercase;
+    padding: 10px 34px;
+}
+
+.date {
+    text-align: center;
+    background: #73c926;
+    color: white;
+    font: 30px 'Changa One', cursive;
+    line-height: 30px;
+    padding: 8px 0 ;
+    border-radius: 14px;
+    margin: 10px 0;
+}
+
+footer {
+    background: url(../images/bg.gif) 0 center repeat;
+    text-align: center;
+    padding: 20px;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0 90px 15px 0;
+}
+
+footer a {
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+footer nav a,
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav a:hover,
+footer nav .active a {
+    color: #FA97C2;
 }
