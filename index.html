@@ -60,10 +60,10 @@
     </nav>
   </header>
   <!--/header-->
-
+<div id="content">
   <!--banner-->
   <div class="container-fluid" id="banner">
-    <div class="conteiner text-center">
+    <div class="container text-center">
       <h4 class="text-white">Tasty cakes and ice-cream<br />for everyone</h4>
       <div>
         <a id="btn-menu" href="#">see our menu</a>
@@ -126,7 +126,7 @@
       </div>
     </div>
     <!--/News-->
-
+  </div>
     <!--footer-->
     <footer class="container-fluid">
       <nav>
@@ -156,7 +156,7 @@
         <img src="{{thumbpath}}" alt="">
         <h4>{{name}}</h4>
         <div class="pb-2">{{summary}}</div>
-        <a class="readmore" href="#">Read more</a>
+        <a class="readmore" href="#" onclick="loadData('products/{{id}}', '#content', '#details-template');">Read more</a>
       </div>
       {{/each}}
     </script>
@@ -177,6 +177,24 @@
       </div>
       {{/each}}
     </script>
+
+    <script id="details-template" type="text/x-handlebars-template">
+      <!--small banner-->
+      <div class="container-fluid" id="small-banner">
+      </div>
+      <!--/small banner-->
+
+      <!--details-->
+      {{#each data}}
+      <div class="container py-5">
+        <h3 class="text-dark">{{name}}</h3>
+        <div>{{{description}}}</div>
+      </div>
+      {{/each}}
+      <!--/details-->
+    </script>
+
+    
 
     <script id="details-template" type="text/x-handlebars-template">
       
