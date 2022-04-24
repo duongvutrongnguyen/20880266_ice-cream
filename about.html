@@ -66,12 +66,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        <h3 class="text-dark">About Us</h3>
-        <img src="images/about-1.jpg" alt="" class="round-img">
-        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque quos, dolores laudantium, quasi natus vel cupiditate inventore laborum, autem vitae! Porro iure aspernatur maiores officia vel itaque, ad expedita!</p>
-        <p><a href="#" class="readmore">Read more</a></p>
+      <div class="col-md-8" id="aboutus">
+        
       </div>
       <div class="col-md-4">
         <h3 class="text-dark">Our Vision</h3>
@@ -167,6 +163,25 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/handlebars-v4.1.0.js"></script>
+
+  <script id="aboutus-template" type="text/x-handlebars-template">
+    {{#each data}}
+    <h3 class="text-dark">About Us</h3>
+    <img src="{{thumbpath}}" alt="" class="round-img">
+    {{{summary}}}
+    <p><a href="#" class="readmore">Read more</a></p>
+    {{/each}}
+  </script>
+
+  <script src="js/20880266.js"></script>
+  <script>
+    $(document).ready(function(){
+      loadData('aboutus', '#aboutus', '#aboutus-template');
+      //loadData('news', '#news', '#news-template');
+    });
+  </script>
+
 </body>
 
 </html>

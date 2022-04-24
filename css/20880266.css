@@ -167,6 +167,10 @@ h3 {
     margin: 10px 0;
 }
 
+#about-section {
+    margin: 20px;
+}
+
 .about div > img {
     float: left;
     margin: 20px;
